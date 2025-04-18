@@ -14,11 +14,9 @@
 	"features": {
     "ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {}
   },
-
+	
 	// Install pixi, use it to install dependencies, and create a kernel for Jupyter.
-	// "postCreateCommand": "curl -fsSL https://pixi.sh/install.sh | bash && /home/vscode/.pixi/bin/pixi install && /home/vscode/.pixi/bin/pixi run python -m ipykernel install --user --name=$SERVICE_NAME --display-name '$CONTAINER_NAME'",
-	"postCreateCommand": "curl -fsSL https://pixi.sh/install.sh | bash && /home/vscode/.pixi/bin/pixi install && /home/vscode/.pixi/bin/pixi run python -m ipykernel install --user",
-
+	"postCreateCommand": "curl -fsSL https://pixi.sh/install.sh | bash && /home/vscode/.pixi/bin/pixi install && /home/vscode/.pixi/bin/pixi run python -m ipykernel install --user --name=tutorial-kernel --display-name='Tutorial Kernel'",
 
 	// Configure tool-specific properties.
   "customizations": {
