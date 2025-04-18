@@ -10,16 +10,24 @@
 		"CONTAINER_NAME": "Guide: Access Sentinel 2 Data from AWS"
 	},
 	
+	"features": {
+    "ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {}
+  },
+
 	// Install pixi, use it to install dependencies, and create a kernel for Jupyter.
 	// "postCreateCommand": "/workspace/.devcontainer/postCreateCommand.sh",
 	"postCreateCommand": "curl -fsSL https://pixi.sh/install.sh | bash && /home/vscode/.pixi/bin/pixi install && /home/vscode/.pixi/bin/pixi run python -m ipykernel install --user --name=$SERVICE_NAME --display-name '$CONTAINER_NAME'",
+
+	// Open up the main notebook in the workspace.
+	"postStartCommand": "code /workspace/index.ipynb",
 
 	// Configure tool-specific properties.
   "customizations": {
     "vscode": {
       "extensions": [
 				"ms-python.python",
-				"ms-toolsai.jupyter"
+				"ms-toolsai.jupyter",
+				"quarto.quarto"
 			]
     }
   }
