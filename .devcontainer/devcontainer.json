@@ -3,12 +3,6 @@
 {
 	"name": "Guide: Access Sentinel 2 Data from AWS",
 	"image": "mcr.microsoft.com/devcontainers/python:1-3.12-bookworm",
-
-	// Make the container name and service name available to the container.
-	"containerEnv": {
-		"SERVICE_NAME": "guide-s2-aws-service",
-		"CONTAINER_NAME": "Guide: Access Sentinel 2 Data from AWS"
-	},
 	
 	// Install the Quarto CLI in the dev container.
 	"features": {
