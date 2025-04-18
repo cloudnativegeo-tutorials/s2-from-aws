@@ -25,11 +25,10 @@
 				"ms-python.python",
 				"ms-toolsai.jupyter",
 				"quarto.quarto"
-			],
-			"openFiles": [ "index.ipynb" ]
+			]
 		},
 		"codespaces": {
-			"openFiles": [ "index.ipynb" ]
+			"openFiles": ["README_devcontainer.md"]
 		}
   }
 
