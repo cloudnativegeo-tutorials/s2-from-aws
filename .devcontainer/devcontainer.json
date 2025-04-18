@@ -27,6 +27,9 @@
 				"quarto.quarto"
 			],
 			"openFiles": [ "index.ipynb" ]
+		},
+		"codespaces": {
+			"openFiles": [ "index.ipynb" ]
 		}
   }
 
